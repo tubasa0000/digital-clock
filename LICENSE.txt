@@ -1,0 +1,150 @@
+Copyright (c) 2026 tubasa0000
+
+-----------------------
+日本語版（Japanese）
+-----------------------
+
+本ライセンスは、本リポジトリに含まれる「digital-clock」（以下「本作品」）の利用条件を定めるものです。
+
+著作権
+本作品の著作権は tubasa0000 に帰属します。Copyright (c) 2026 tubasa0000
+
+利用許諾（許可される利用）
+- 個人、法人、商用、非商用を問わず、無料で利用できます。
+- 動画や配信における表示・利用（収益化を含む）に制限はありません。
+- 表示目的でのウェブホスティング（閲覧・埋め込み表示）は許可します。
+
+改変
+- 以下の改変は自由に行って構いません：
+  - デザイン変更（ダークモード化、配色、レイアウト、絵文字、季節演出等）
+  - UI改善（ボタン追加、レスポンシブ対応、アクセシビリティ改善等）
+  - 機能追加（ライト/ダーク切替、アラーム、音、タイムゾーン設定、翻訳等）
+  - パフォーマンス最適化やコード整理等の内部変更
+
+禁止事項（必須順守）
+以下の行為を禁止します（いかなる場合も許可されません）：
+- ウイルス、マルウェア、スパイウェア等の混入
+- 偽広告や詐欺的リンクの挿入
+- 利用者に害を及ぼす挙動の追加（例：意図的な爆音再生等）
+- 本作品を自作であるかのように偽る行為（著作者表示の削除や改変により作者を隠す行為等を含む）
+
+再配布（重要）
+- **改変・未改変を問わず、本作品そのものの再配布は不可**です。
+  - ここでの「再配布」とは、本作品のソースファイル（HTML/CSS/JS 等）を第三者が直接ダウンロード可能な形で配布することを指します。具体例としては、ZIP 配布、ダウンロードボタン、ソースそのものを再配布用にアップロードする行為等が含まれます。
+- 許容される行為の例：
+  - 配信・録画・動画内での表示（OBS のブラウザソースとしての利用等）
+  - ウェブ上での表示用ホスティング（閲覧・埋め込み表示）— 表示目的でホストすることは許可しますが、ダウンロード可能な形で元ファイルを提供しないでください。
+- 不明点がある場合は元作者（tubasa0000）にお問い合わせください。
+
+改変版を公開（ホスト）する際のルール
+改変版をウェブ上で公開（例：GitHub Pages 等）する場合、以下を必ず守ってください：
+1. 元の著作権表示を残すこと
+   - README やウェブページの目立つ場所に `© tubasa0000`（または同等の表記）を残してください。
+2. 変更点・作成者を明示すること
+   - README 等に `Modified by <改変者名/ハンドルネーム>` と簡潔な変更履歴（要点）を記載してください。
+3. サードパーティ資産（フォント・画像・音源・ライブラリ等）を追加した場合
+   - 追加した各資産の名前、作者、ライセンス（URL）を README の `Third-party assets` セクションに列挙し、必要に応じてそのライセンス全文またはリンクをリポジトリに同梱してください。
+   - フォントを追加する場合は、必ずフォントの利用許諾（商用可否、埋め込み可否等）を確認し、必要なクレジットやライセンス文を同梱してください。
+4. 改変版に新しいライセンスを付与する場合の扱い
+   - 元の著作権表示（© tubasa0000）および本利用条件は必ず残してください。
+   - 改変者が新たに追加した独自のコンテンツ（例：自作画像、独自機能）については改変者が別途ライセンスを付与できますが、元作品そのものに関する取り扱い（特に再配布禁止）と矛盾しないようにしてください。
+5. ダウンロード可能な元ファイルを提供しないこと
+   - 公開する場合でも、元のソースを直接ダウンロードできる形（ZIP の配布リンク、DL ボタン等）は避け、表示・埋め込み目的に留めてください。
+   - どうすべきか不明な場合は作者に確認してください。
+
+Third-party assets（サードパーティ資産）について
+- 改変で追加したフォント・画像・音源・ライブラリ等は必ず以下を行ってください：
+  - 追加した各資産の名前、作者、ライセンス（URL）を README の `Third-party assets` に記載すること。
+  - 必要に応じてそのライセンス全文（またはリンク）をリポジトリに含めること。
+  - 有料フォントや商用ライセンスが必要な素材は、正しい購入・許諾を行うこと。
+  - Webフォントを埋め込む場合は、埋め込み許可の有無を確認すること。
+
+クレジット
+- クレジット表記や利用報告は義務ではありません。
+- 表記いただける場合は次のように記載いただけると助かります：
+  - `Digital Clock — original work by tubasa0000 (https://scratch.mit.edu/users/tubasa0000/)`
+  - 改変版であれば合わせて：`Modified by <改変者名/ハンドルネーム> — changes: <短い説明>`
+
+免責事項
+- 本作品（公式版・改変版を含む）の利用、または利用できなかったことにより生じたいかなる損害についても、作者（tubasa0000）は一切責任を負いません。
+- 改造版・非公式版の利用によって生じた損害、及び利用者自身の過失や管理不十分によって生じた損害についても作者は責任を負いません。
+
+お問い合わせ
+- ご不明な点がある場合は以下よりお問い合わせください（Scratch アカウントが必要です）：
+  - https://scratch.mit.edu/users/tubasa0000/
+
+本作品は独自の利用条件に基づいて提供されます。
+
+-----------------------
+English Version (英語版)
+-----------------------
+
+This license sets the terms of use for "digital-clock" contained in this repository (hereinafter "the Work").
+
+Copyright
+Copyright (c) 2026 tubasa0000
+
+Permission to use
+- The Work may be used free of charge by individuals, organizations, commercial and non-commercial users.
+- Use and display in videos and streams (including monetized content) is permitted without restriction.
+- Hosting the Work for display purposes on the web (viewing and embedding) is permitted.
+
+Modifications
+- You are free to modify the Work in the following ways:
+  - Design changes: dark mode, colors, layout, emoji, seasonal decorations, etc.
+  - UI improvements: adding buttons, responsive design, accessibility improvements, etc.
+  - Feature additions: light/dark toggle, alarm, sounds, timezone settings, localization (translations), etc.
+  - Performance optimizations and code refactoring for readability and maintenance.
+
+Prohibited acts (mandatory)
+The following acts are strictly prohibited:
+- Introducing viruses, malware, spyware, or similar harmful software.
+- Inserting fake advertisements or fraudulent links.
+- Adding behavior that harms users (e.g., intentionally loud sounds).
+- Claiming the Work as your own (including removing or altering author attribution to hide the original author).
+
+Redistribution (Important)
+- **Redistribution of the Work itself is prohibited, whether modified or unmodified.**
+  - "Redistribution" means distributing the source files of the Work (HTML/CSS/JS, etc.) in a form that third parties can directly download. Examples include distributing ZIP files, providing download links, or otherwise making the original source directly downloadable.
+- Examples of permitted actions:
+  - Displaying the Work in streams, recordings, or videos (e.g., using OBS browser source).
+  - Hosting the Work for display on the web (viewing and embedding). Hosting for display is allowed, but do not provide the original files in a downloadable form.
+- If in doubt, contact the original author (tubasa0000).
+
+Rules for publishing (hosting) modified versions
+If you publish (host) a modified version on the web (e.g., GitHub Pages), you must comply with the following:
+1. Keep the original copyright notice
+   - Retain `© tubasa0000` (or equivalent) in README or a prominent place on the page.
+2. Indicate the modifier and changes
+   - Include `Modified by <your name/handle>` in README with a brief summary of changes.
+3. Third-party assets (fonts, images, audio, libraries) added
+   - List each added asset's name, author, and license (URL) in a `Third-party assets` section in README, and include license texts or links in the repository as needed.
+   - For fonts, confirm the font's permission (commercial use, embedding, etc.) and include required credits or license texts.
+4. When assigning a new license to a modified version
+   - Keep the original copyright notice (`© tubasa0000`) and these terms.
+   - You may license content you added (e.g., original images or features), but do not contradict the handling of the original Work (notably the prohibition on redistribution).
+5. Do not provide downloadable original files
+   - Even when publishing, avoid making the original source files directly downloadable (ZIP links, DL buttons, etc.). Keep hosting limited to display/embedding. Ask the author if unsure.
+
+Third-party assets
+- For fonts, images, audio, libraries added in modifications:
+  - Document each added asset's name, author, and license (URL) in the README's `Third-party assets` section.
+  - Include full license texts or links in the repository when necessary.
+  - Ensure paid fonts or assets are properly purchased or licensed.
+  - For webfonts, verify embedding permissions.
+
+Credits
+- Credit is not required nor mandatory.
+- Recommended credit formats (if provided):
+  - `Digital Clock — original work by tubasa0000 (https://scratch.mit.edu/users/tubasa0000/)`
+  - For modified versions: `Modified by <your name/handle> — changes: <short description>`
+
+Disclaimer
+- The author (tubasa0000) is not liable for any damages arising from the use or inability to use the Work (official or modified versions).
+- The author is not responsible for damages arising from modified or unofficial versions, nor for damages due to user negligence or insufficient management.
+
+Contact
+- For inquiries, please contact the author (a Scratch account is required):
+  - https://scratch.mit.edu/users/tubasa0000/
+
+The Work is provided under these custom terms.
