@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Clock</title>
+
+<style>
+    /* 勝手な余白やサイズ計算の違いを消します */
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html, body {
+        height: 100%;
+        background: transparent; /* OBS用：完全透過 */
+    }
+    /* 時計を画面ど真ん中に固定 */
+    body{/* 必要に応じて font-family: 'Roboto', sans-serif; などを追加することでフォントを変更可（ただし、この場合「<link href="https://fonts.googleapis.com/..." rel="stylesheet">」が必要です。 ）*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+        overflow: hidden;
+    }
+
+    /* 時計コンテナのデザイン */
+    .clock-container{
+        padding: 2rem 3rem;
+        border-radius: 20px;
+        background: #ffffff;
+        box-shadow: 0 15px 25px rgba(0,0,0,0.12);
+        border: 1px solid rgba(0,0,0,0.06);
+        text-align: center;
+        color: #0b0b0b;
+    }
+    /* LIVE インジケータのデザイン */
+    .live-indicator{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+        font-weight: 700;
+    }
+
+    .live-indicator::before {
+        content: '';
+        width: 10px;
+        height: 10px;
+        background-color: #ff4757;
+        border-radius: 50%;
+        animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+        0%   { box-shadow: 0 0 0 0 rgba(255, 71, 87, 0.7); }
+        70%  { box-shadow: 0 0 0 10px rgba(255, 71, 87, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(255, 71, 87, 0); }
+    }
+
+    /* 時刻・日付表示 */
+    /* 必要に応じて font-family: 'Roboto', sans-serif; などを追加することでフォントを変更可（ただし、この場合「<link href="https://fonts.googleapis.com/..." rel="stylesheet">」が必要です。 ）*/
+    #time{
+        font-size: 5rem;
+        font-weight: 700;
+        font-variant-numeric: tabular-nums;
+        letter-spacing: 3px;
+        line-height: 1;
+        margin-bottom: 0.5rem;
+    }
+
+
+    #time .seconds {
+        font-size: 2.5rem;
+        opacity: 0.9;
+        margin-left: 0.25rem;
+    }
+
+    #dateDisplay{
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        opacity: 0.85;
+    }
+
+    /* モバイルの場合の調整 */
+    @media (max-width: 480px){
+        #time{ font-size: 3rem; }
+        #time .seconds{ font-size: 1.4rem; }
+        .clock-container{ padding: 1.2rem 1.4rem; }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="clock-container">
+    <div class="live-indicator">LIVE</div>
+    <div id="time">
+        <span id="timeDisplay">--:--</span>
+        <span class="seconds" id="secondsDisplay">:--</span>
+    </div>
+    <div id="dateDisplay">--/-- ---</div>
+</div>
+
+<script>
+    /* DOM取得 */
+    const timeDisplay = document.getElementById("timeDisplay");
+    const secondsDisplay = document.getElementById("secondsDisplay");
+    const dateDisplay = document.getElementById("dateDisplay");
+
+    /* 定数・ユーティリティ */
+    const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];/* 必要に応じて['日', '月', '火', '水', '木', '金', '土']などに変更可 */
+
+    // 数値を2桁に揃える
+    function pad(num) {
+        return String(num).padStart(2, '0');
+    }
+
+    /* 時計更新処理 */
+    function updateClock() {
+        // 「現在の正確な時刻」を取得
+        const now = new Date();
+
+        const hours   = pad(now.getHours());
+        const minutes = pad(now.getMinutes());
+        const seconds = pad(now.getSeconds());
+
+        const month = pad(now.getMonth() + 1);
+        const day   = pad(now.getDate());
+        const week  = weekdays[now.getDay()];
+
+        // 表示反映
+        timeDisplay.textContent    = `${hours}:${minutes}`;
+        secondsDisplay.textContent = `:${seconds}`;
+        dateDisplay.textContent    = `${month}/${day} ${week}`;
+    }
+
+    /* 秒ピッタリ同期クロック */
+    function startClock() {
+        function tick() {
+            updateClock();
+
+            // 次の「秒切り替わり」までの残り時間を計算
+            const now = new Date();
+            const delay = 1000 - now.getMilliseconds();
+
+            // setTimeout を使い、ズレを毎秒補正
+            setTimeout(tick, delay);
+        }
+        tick(); // 即時起動
+    }
+
+    startClock();
+</script>
+
+</body>
+</html>
