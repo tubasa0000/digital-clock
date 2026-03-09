@@ -8,9 +8,6 @@ It displays real-time time in the browser.
 ## Copyright
 The copyright of this work belongs to **tubasa0000**.
 
-All contents of this work (including but not limited to source code, HTML/CSS/JS, images, design, and text) are **expressly prohibited** from being used for the purpose of machine learning (AI) model training, validation, or evaluation, and from being used for data collection, reproduction, storage, or redistribution for those purposes. Examples of such prohibited uses include web scraping, corpus collection, model fine-tuning, dataset creation, or providing the material to third parties, but are not limited to these.  
-This prohibition will not be lifted except by the explicit permission of the author.
-
 It can be used free of charge by individuals, organizations, commercial and non-commercial users.  
 There are no restrictions regarding monetized videos or streams.
 
